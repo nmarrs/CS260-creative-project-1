@@ -1,4 +1,13 @@
 $(function() {
+    // Enable popovers
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+    
+    $('.popover-dismiss').popover({
+      trigger: 'focus'
+    })
+    
     // Setup audio clips
     var lowCKeyAudio = new Audio('static/sounds/lowCKey.wav')
     lowCKeyAudio.preload = 'auto'
@@ -113,54 +122,105 @@ $(function() {
                 $('#lowCKey').addClass('active')
                 var click = lowCKeyAudio.cloneNode()
                 click.play()
+                setTimeout(function() {
+                    $('#lowCKey').removeClass('active')
+                }, 250)
                 break;
             case 119:
+                $('#CsharpKey').addClass('active')
                 var click = CsharpKeyAudio.cloneNode()
                 click.play()
+                setTimeout(function() {
+                    $('#CsharpKey').removeClass('active')
+                }, 250)
                 break;
             case 115:
+                $('#DKey').addClass('active')
                 var click = DKeyAudio.cloneNode()
                 click.play()
+                setTimeout(function() {
+                    $('#DKey').removeClass('active')
+                }, 250)
                 break;
             case 101:
+                $('#EfKey').addClass('active')
                 var click = EfKeyAudio.cloneNode()
                 click.play()
+                setTimeout(function() {
+                    $('#EfKey').removeClass('active')
+                }, 250)
                 break;
             case 100:
+                $('#EKey').addClass('active')
                 var click = EKeyAudio.cloneNode()
                 click.play()
+                setTimeout(function() {
+                    $('#EKey').removeClass('active')
+                }, 250)
                 break;
             case 102:
+                $('#FKey').addClass('active')
                 var click = FKeyAudio.cloneNode()
                 click.play()
+                setTimeout(function() {
+                    $('#FKey').removeClass('active')
+                }, 250)
                 break;
             case 116:
+                $('#FsharpKey').addClass('active')
                 var click = FsharpKeyAudio.cloneNode()
                 click.play()
+                setTimeout(function() {
+                    $('#FsharpKey').removeClass('active')
+                }, 250)
                 break;
             case 103:
+                $('#GKey').addClass('active')
                 var click = GKeyAudio.cloneNode()
                 click.play()
+                setTimeout(function() {
+                    $('#GKey').removeClass('active')
+                }, 250)
                 break;
             case 121:
+                $('#GsharpKey').addClass('active')
                 var click = GsharpKeyAudio.cloneNode()
                 click.play()
+                setTimeout(function() {
+                    $('#GsharpKey').removeClass('active')
+                }, 250)
                 break;
             case 104:
+                $('#AKey').addClass('active')
                 var click = AKeyAudio.cloneNode()
                 click.play()
+                setTimeout(function() {
+                    $('#AKey').removeClass('active')
+                }, 250)
                 break;
             case 117:
+                $('#BfKey').addClass('active')
                 var click = BfKeyAudio.cloneNode()
                 click.play()
+                setTimeout(function() {
+                    $('#BfKey').removeClass('active')
+                }, 250)
                 break;
             case 106:
+                $('#BKey').addClass('active')
                 var click = BKeyAudio.cloneNode()
                 click.play()
+                setTimeout(function() {
+                    $('#BKey').removeClass('active')
+                }, 250)
                 break;
             case 107:
+                $('#highCKey').addClass('active')
                 var click = highCKeyAudio.cloneNode()
                 click.play()
+                setTimeout(function() {
+                    $('#highCKey').removeClass('active')
+                }, 250)
                 break;
             default:
                 break;

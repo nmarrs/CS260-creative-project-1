@@ -24,7 +24,8 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     background-image: linear-gradient(white 10%, #e4e4e4 92%, #d0cfcf 91%, white 97%) !important;
 }
 
-.whiteKey:active {
+.whiteKey:active,
+.whiteKey.active {
     background-image: linear-gradient(white 10%, #b1b1b1 95%, #656565 92%, #797979 90%) !important;
 }
 
@@ -39,7 +40,8 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     background-image: linear-gradient(#313131 10%, #3a3a3a 85%, black 90%) !important;
 }
 
-.blackKey:active {
+.blackKey:active,
+.blackKey.active {
     background-image: linear-gradient(#4a4a4a 30%, #000 80%, #404040 92%, black 93%) !important;
 }
 

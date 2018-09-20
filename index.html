@@ -3,17 +3,17 @@
     
 <header>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="This is a project created for CS 260">
     <meta name="author" content="Nathan Marrs">
     
     <title>Creative Project 1</title>
     
-    <!-- Include jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
     <!-- Include Bootstrap 4 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     
     <!-- Custom styles -->
     <link href="index.css" rel="stylesheet">
@@ -34,7 +34,37 @@
     <p>Play to your heart's content...</p> 
   </div>
   
-  <div class="container">
+  <div class="container w-75">
+    <div class="float-right">
+      <a
+      class="btn text-dark"
+      tabindex="0"
+      role="button"
+      data-toggle="popover"
+      data-trigger="focus"
+      data-placement="bottom"
+      data-html="true"
+      title="How to Play"
+      data-content="
+      The Simple Piano consists of one octave (8  full-step notes), starting at middle C. This
+      allows for a great deal of simple songs to be played right from your browser!
+      <br />
+      <br />
+      There are two ways to play the Simple Piano!
+      <br />
+      <br />
+      <ol>
+        <li>Play by clicking on each note</li>
+        <br />
+        <li>
+        Play using your keyboard! Be sure caps lock is off though! Middle C is mapped to the 'a' key.
+        See if you can become a literal keyboard master :)
+        </li>
+      </ol>"
+      >
+        <i class="far fa-question-circle"></i> Help
+      </a>
+    </div>
     <div id="pianoContainer">
         <div id="lowCKey" class="whiteKey"></div>
         <div id="CsharpKey" class="blackKey"></div>
@@ -52,6 +82,11 @@
     </div>
   </div>
 </div>
+
+<!-- Bootstrap javascript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <!-- Custom javascript -->
 <script src="index.js"></script>
