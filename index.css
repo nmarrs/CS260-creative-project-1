@@ -1,0 +1,45 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+.jumbotron{
+    height: 100vh;
+}
+
+#pianoContainer {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.whiteKey {
+    height: 375px;
+    width: 150px;
+    border: solid;
+    background-image: linear-gradient(white 10%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);
+}
+
+.whiteKey:hover {
+    background-image: linear-gradient(white 10%, #e4e4e4 92%, #d0cfcf 91%, white 97%) !important;
+}
+
+.whiteKey:active {
+    background-image: linear-gradient(white 10%, #b1b1b1 95%, #656565 92%, #797979 90%) !important;
+}
+
+.blackKey {
+    align-self: flex-start;
+    height: 250px;
+    width: 100px;
+    background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);
+}
+
+.blackKey:hover {
+    background-image: linear-gradient(#313131 10%, #3a3a3a 85%, black 90%) !important;
+}
+
+.blackKey:active {
+    background-image: linear-gradient(#4a4a4a 30%, #000 80%, #404040 92%, black 93%) !important;
+}
+

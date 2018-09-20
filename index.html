@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html
     
-<head>
+<header>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="This is a project created for CS 260">
@@ -12,17 +12,49 @@
     <!-- Include jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
+    <!-- Include Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
     <!-- Custom styles -->
     <link href="index.css" rel="stylesheet">
     
-    <!-- Custom javascript -->
-    <script src="index.js"></script>
-</head>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="/creative_projects/project1/">
+        <img src="static/images/piano-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Simple Piano
+      </a>
+    </nav>
+</header>
     
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1>Simple Piano</h1> 
+    <p>Play to your heart's content...</p> 
+  </div>
+  
+  <div class="container">
+    <div id="pianoContainer">
+        <div id="lowCKey" class="whiteKey"></div>
+        <div id="CsharpKey" class="blackKey"></div>
+        <div id="DKey" class="whiteKey"></div>
+        <div id="EfKey" class="blackKey"></div>
+        <div id="EKey" class="whiteKey"></div>
+        <div id="FKey" class="whiteKey"></div>
+        <div id="FsharpKey" class="blackKey"></div>
+        <div id="GKey" class="whiteKey"></div>
+        <div id="GsharpKey" class="blackKey"></div>
+        <div id="AKey" class="whiteKey"></div>
+        <div id="BfKey" class="blackKey"></div>
+        <div id="BKey" class="whiteKey"></div>
+        <div id="highCKey" class="whiteKey"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Custom javascript -->
+<script src="index.js"></script>
 
 </body>
 </html>
